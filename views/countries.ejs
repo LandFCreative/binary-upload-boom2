@@ -1,0 +1,16 @@
+<%- include('partials/header') -%>
+
+ 
+ 
+ 
+ <div class="row justify-content-center mt-5">
+    <h2>Random Library Feed</h2>
+    <ul class="row list-unstyled">
+          <% uniqueCountries.forEach(country => { %>
+              <li><%= country %></li>
+          <% }); %>
+      </ul>
+  </div>
+
+
+  <%- include('partials/footer') -%>

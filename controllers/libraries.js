@@ -41,7 +41,7 @@ getLocation: async (req, res) => {
   try {
     const libraries = await Library.find().sort({ createdAt: "desc" }).lean();
     res.render("location.ejs", { libraries: libraries, user: req.user }); 
- 
+
   } catch (err) {
     console.log(err);
   }
