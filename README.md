@@ -12,7 +12,7 @@
   <li>MVC</li>
   <li>MongoDB</li> 
   <li>NODE.JS</li>
-  <li>CLOUDINARY</li>
+  <li>CLOUDINARY</li> 
   
 </ul>
 

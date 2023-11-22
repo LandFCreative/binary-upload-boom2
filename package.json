@@ -1,7 +1,7 @@
 {
-  "name": "binary-upload-boom",
+  "name": "mini library",
   "version": "1.0.0",
-  "description": "100Devs Social Network",
+  "description": "Free Mini Library app",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
