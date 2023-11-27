@@ -1,15 +1,48 @@
 <%- include('partials/header') -%>
+
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <h2>Random Library Feed</h2>
+    <ul class="row list-unstyled">
+      <% for(var i=0; i<libraries.length; i++) {%>
+        <li class="col-6 justify-content-between mt-5">
+          <a href="/library/<%= libraries[i]._id%>">
+            <img class="img-fluid" src="<%= libraries[i].image%>">
+          </a>
+        </li>
+      <% } %>
+      </ul>
+  </div>
+  <!-- <span><%= libraries.country  %></span> -->
+
   <div class="container">
     <div class="row justify-content-center mt-5">
+      <h2>Libraries by Location</h2>
       <ul class="row list-unstyled">
-        <% for(var i=0; i<posts.length; i++) {%>
+        <% for(var i=0; i<libraries.length; i++) {%>
+
           <li class="col-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
+            <a href="/library/<%= libraries[i]._id%>">
+              <%= libraries[i].city%>,   <%= libraries[i].country%>
             </a>
           </li>
         <% } %>
         </ul>
     </div>
-  </div>  
+
+
+    
+
+
+<div class="container">
+  <div>       
+    <div class="col-6 justify-content-center mt-5 mb-5">
+      <a class="btn btn-secondary" href="/profile">Return to Your Profile</a>
+      <a class="btn btn-secondary" href="/feed">Return to Feed</a>
+    </div>
+  </div>
+</div>
+
+ 
+
 <%- include('partials/footer') -%>
