@@ -23,10 +23,10 @@
         <% libraryList.forEach((library, index) => {
           if (index === 0 || library.city !== libraryList[index - 1].city) { %>
               <h4><%= library.city %></h4>
-              <ul class=" list-unstyled pb-4">
+              <ul class=" list-unstyled pb-4 color-black">
           <% } %>
   
-                  <li ><a href="/library/<%= library._id %>"><%= library.name %></a></li>
+                  <li ><a href="/library/<%= library._id %>" class="black-link link-dark"><%= library.name %></a></li>
           <% if (index === libraryList.length - 1 || library.city !== libraryList[index + 1].city) { %>
         </ul>
           <% } %>

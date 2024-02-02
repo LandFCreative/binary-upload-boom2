@@ -9,9 +9,9 @@ const { ensureAuth } = require("../middleware/auth");
 //post/:id, post/createPost, post/likePost/:id, post/deletePost/:id
 router.get("/:id", ensureAuth, librariesController.getPost);
 
-// router.get("/country", ensureAuth, librariesController.getCountry);
 
 
+  
 // Enables user to create post W/ cloudinary for media uploads
 router.post("/createLibrary", upload.single("file"), librariesController.createLibrary);
 

@@ -14,7 +14,6 @@ getProfile: async (req, res) => {
   }
 },
 
-
 // feed=  librarysearch with a feed of each library
 getFeed: async (req, res) => {
   try {
@@ -47,21 +46,6 @@ getLocation: async (req, res) => {
   }
 },
 
-// getUniqueCountries: async (req, res) => {
-//   try {
-//     // Retrieve values from the database
-//     const librariescountries = await Library.find(country); // Fetch only the 'country' field
-//     const uniqueCountries = [...new Set(libraries.map(item => item.country))];
-//    // Remove duplicates using Set
-//   //  const uniqueCountries = [...new Set(libraries.map(library => library.country))];
-
-//    res.render('/feed.ejs', { librariescountries: librariescountries , user: req.user });
-//  // Pass the unique values to the view
-//   } catch (err) {
-//       console.log(err);
-//     }
-// },
- 
 // post = Post each library
 getPost: async (req, res) => {
   try {
@@ -73,6 +57,9 @@ getPost: async (req, res) => {
     console.log(err);
   }
 },
+
+
+
 
   // profile = submit form for library
 createLibrary: async (req, res) => {
